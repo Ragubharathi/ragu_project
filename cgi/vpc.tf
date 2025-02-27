@@ -3,7 +3,7 @@ resource "aws_vpc" "my_vpc" {
   tags = merge(var.common_tags, {
     Name = "vpc"
 
-  }
+  })
 }
 
 /* resource "aws_internet_gateway" "igw" {
