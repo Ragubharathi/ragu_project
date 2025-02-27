@@ -1,5 +1,5 @@
 resource "aws_vpc" "my_vpc" {
-  cidr_block = var.vpn_cidr
+  cidr_block = var.vpc_cidr
   tags = {
     Name = "${var.tags}-vpc"
   }
