@@ -4,12 +4,12 @@ provider "aws" {
 
 module "vpc" {
   source = "/root/ragu_project/Modules/vpc"
-  my_region = "ap-south-1"
-  vpc_cidr   = "150.150.0.0/16"
-  AZ1 = "ap-south-1a"
-  AZ2 = "ap-south-1c"
-  pub_sub = "150.150.1.0/24"
-  pri_sub = "150.150.2.0/24"
-  tags    = "price"
+  my_region = var.my_region
+  vpc_cidr   = var.vpc_cidr
+  AZ1 = var.AZ1
+  AZ2 = var.AZ2
+  pub_sub = var.pub.sub
+  pri_sub = var.pri.sub
+  tags    = var.tags
 }
 
