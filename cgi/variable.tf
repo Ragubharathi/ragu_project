@@ -22,8 +22,8 @@ variable "pri_sub" {
   default = "10.0.2.0/24"
 }
 
-variable "tags" {
-  description = "Common tags for resources"
+variable "common_tags" {
+  description = "Common tags for all resources"
   type        = string
-  default = "Dev"
+  default = "CGI"
 }
