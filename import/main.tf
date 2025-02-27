@@ -4,7 +4,7 @@ provider "aws" {
 
 
 import {
-  id = "vpc-04cdee559487777b5"
+  id = "i-036b2ef56828d4d3f"
 
-  to = aws_vpc.default
+  to = aws_instance.import
 } 
