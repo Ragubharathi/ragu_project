@@ -24,10 +24,8 @@ variable "pri_sub" {
 
 variable "tags" {
   description = "Common tags for resources"
-  type        = map(string)
+  type        = string
   default = {
     Environment = "Dev"
-    Project     = "cgiproject"
-    Owner       = "DevOpsTeam"
   }
 }
