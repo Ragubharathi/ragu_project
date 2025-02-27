@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "vpc" {
-  source = "./Modules/vpc"
+  source = "/root/ragu_project/Modules"
   
 }
 
