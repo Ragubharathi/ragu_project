@@ -1,11 +1,12 @@
 resource "aws_vpc" "my_vpc" {
   cidr_block = var.vpc_cidr
-  tags = {
-    Name = "${var.tags}-vpc"
+  tags = merge(var.common_tags, {
+    Name = "vpc"
+
   }
 }
 
-resource "aws_internet_gateway" "igw" {
+/* resource "aws_internet_gateway" "igw" {
   vpc_id = aws_vpc.my_vpc.id
   tags = {
     Name = "${var.tags}-igw"
@@ -73,6 +74,6 @@ resource "aws_subnet" "private_sub" {
 resource "aws_route_table_association" "private_assoc_1" {
   subnet_id = aws_subnet.private_sub.id
   route_table_id = aws_route_table.private_rt.id
-}
+} */
 
 
