@@ -1,29 +1,34 @@
 variable "my_region" {
-  default = "ap-south-1"
+  type = string
+  description = "Name of the region"
 }
 
 variable "vpc_cidr" {
-  default = "10.0.0.0/16"
+  type = string
+  description = "CIDR block of VPC"
 }
 
 variable "AZ1" {
-  default = "ap-south-1a"
+  type = string
+  description =  "Availability Zone 1"
 }
 
 variable "AZ2" {
-  default = "ap-south-1b"
+  type = string
+  description =  "Availability Zone 2"
 }
 
 variable "pub_sub" {
-  default = "10.0.1.0/24"
+  type = string
+  description = "public subnet CIDR block"
 }
 
 variable "pri_sub" {
-  default = "10.0.2.0/24"
+  type = string
+  description = "public subnet CIDR block"
 }
 
 variable "tags" {
   description = "Common tags for all resources"
   type        = string
-  default = "CGI"
-}
+  }
