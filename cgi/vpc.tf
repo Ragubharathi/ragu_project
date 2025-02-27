@@ -2,7 +2,7 @@ resource "aws_vpc" "my_vpc" {
   cidr_block = var.vpc_cidr
   tags = merge(var.common_tags, {
     Name = "vpc"
-
+    Role  = "WebServer_vpc"
   })
 }
 
