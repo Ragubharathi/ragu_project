@@ -25,7 +25,5 @@ variable "pri_sub" {
 variable "tags" {
   description = "Common tags for resources"
   type        = string
-  default = {
-    Environment = "Dev"
-  }
+  default = "Dev"
 }
