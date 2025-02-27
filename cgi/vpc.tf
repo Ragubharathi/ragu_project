@@ -25,7 +25,7 @@ resource "aws_route_table" "public_rt" {
 
 resource "aws_subnet" "public_sub" {
   vpc_id = aws_vpc.my_vpc.id
-  cidr_block = var.pub_sub.id
+  cidr_block = var.pub_sub
   map_public_ip_on_launch = true
   availability_zone = var.AZ1
   tags = {
