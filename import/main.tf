@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 import {
-  id = vpc-0fadf55931e7b856c
+  id = "vpc-0fadf55931e7b856c"
 
   to = aws_vpc.default
 }
